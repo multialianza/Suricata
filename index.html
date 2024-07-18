@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <!--Metas-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Ivan Salazar">
+            <meta name="description" content="Menú de Restaurant Suricata">
+            <meta name="keywords" content="Colaciones, almuerzos y cenas, la mejor comida de la ciudad">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <!--Link locales, tipografías, CSS-->
+            <!-- Tipografias Open Sans Regular 400 y 700 -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <!--Link Iconos-->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            <!--Link favicon-->
+            <link rel="shortcut icon" type="image/png" href="favicon.png">
+            <!--Titulos-->
+            <title>Suricata Bootstrap</title>
+        </head>
+    
+        <body>
+            
+            <!--Inicio Nav-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo-rosa">
+            <!--nav dispositivos grandes;color texto oscuro del menu de navegación;color fondo menu nav oscuro;fondo rosa personalizado;-->
+                <div class="container">
+                    <a class="navbar-brand barra-nav" href="#">
+                    <!--Nav-brand se refiere al logo que aparece en nav; barra-nav es clase personalizada aplicada en menu nav para estilos adicionales-->
+                        <img src="assets/img/logo.png" alt="logo" class="img-responsive logo-imagen">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!--Nav-toggler despliega la barra nav en pantallas pequeñas-->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <!--nav-collapse se utiliza en container, incluye elementos del nav-->
+                        <ul class="navbar-nav ms-auto"> <!-- ms-auto hace que el texto se vaya a la derecha -->
+                            <!--navbar-navse utiliza para el contenedor, se colocan diferentes enlaces de la página-->
+                            <!--ms-auto se utiliza para alinear los elementos del nav a la derecha-->
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Inicio</a>
+                                <!--nav-link se utiliza para los enlaces dentro del nav-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Productos</a>
+                                <!--text white cambia el color del texto a blanco-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contacto</a>
+                            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Fin de Nav-->
+            
+            <!--Inicio  de Header-->
+            <header class="container hero">
+                <h1 class="text-black-50 text-center font-weight-bold my-5">Nuestros Productos</h1>
+                <!--text-black-50 clase se utiliza para cambiar el color del texto a negro con 50% de opacidad-->
+                <!--text-center esta clase se utiliza para centrar el texto-->
+                <!--font-weight-bold esta clase se utiliza para aplicar negrita al texto-->
+                <!--my-5 esta clase se utiliza para agregar un margen en la parte superior e inferior de los elementos-->
+            </header>
+            <!--Fin de Header-->
+
+            <!--Inicio de Section Card-->
+            <section class="container pb-5">
+                <div class="row mb-5 mx-3">
+                <!--Row esta clase se utiliza para crear una fila en un diseño con sistema de grillas-->
+                <!--mb-5 esta clase se utiliza para agregar un margen en la parte inferior de los elementos-->
+                <!--mx-3 esta clase se utiliza para agregar un margen en los lados izquierdos y derecho de los elementos-->
+
+                    <!--Card 1 Colaciones-->
+                    <div class="col-sm-12 col-md-4">
+                    <!--col-sm-12 se especifica que los elementos ocupen 12 columnas en pantallas pequeñas-->
+                    <!--col-md-4 los elementos ocupan 4 columnas en pantallas medianas-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/colaciones.jpg" class="card-img-top" alt="Colaciones">
+                            <!--card-img-top , coloca una imagen en la parte superior de la card -->
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Colaciones</h5>
+                                <!--card-tittle da estilo al titulo de una card -->
+                                <!-- font-weight-bold , se utiliza para que el texto tenga un peso de negrita-->
+                                <p class="card-text text-truncate">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <!-- card-text ,da estilo al texto dentro de una card-->
+                                <!--text truncate , se utiliza para truncar el texto si es muy largo y no cabe dentro de un contenedor-->
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Morbi leo risus</li>
+                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Card 2 Desayunos-->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/desayunos.jpg" class="card-img-top" alt="Desayunos">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Desayunos</h5>
+                                <p class="card-text text-truncate">Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Card 3 Bebidas-->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/bebidas.jpg" class="card-img-top" alt="Bebidas">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Bebidas</h5>
+                                <p class="card-text text-truncate">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row mb-5 mx-3">
+                    
+                    <!--Card 4 Verduras-->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/verduras.jpg" class="card-img-top" alt="Verduras">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Verduras</h5>
+                                <p class="card-text text-truncate">Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Card 5 Dulces-->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/dulces.jpg" class="card-img-top" alt="Dulces">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Dulces</h5>
+                                <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Card 6 Empanadas-->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/empanadas.jpg" class="card-img-top" alt="Empanadas">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Empanadas</h5>
+                                <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Ver más</a>
+                                <a href="#" class="card-link">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Fin de Section Card-->
+
+            <!--Inicio de Section Icons-->
+            <section class="container-fluid d-sm-none d-md-block py-5 mt-5  bg-info icons-section">
+            <!--container-fluid , crea un contenedor con ancho completo en Bootstrap, se adapta al tamaño de toda la pantalla-->
+            <!--d-sm-none , se utiliza para ocultar un elemento en pantalla pequeña-->
+            <!--d-md-block , muestra un elemento en pantallas medianas-->
+            <!--py-5 , se agrega un pdding 5 en el eje y -->
+            <!--mt-5 , se agrega un margen en la parte superior con valor 5.-->
+            <!--bg-info, da color de fondo a un elemento de boostrap, color azul claro -->
+            <!--icons-section , se utiliza para estilizar una seccion que contiene iconos-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 pagos">
+                        <!--col-lg-4 , define el ancho de una columna en boottrap en pantallas grandes-->
+                    
+                            <h2 class="font-weight-bold">Ahora aceptamos</h2>
+                        </div>
+
+                        <div class="col-lg-8 text-right fa-iconos">
+                        <!--col-lg-8 , define el ancho de una columna en bootstrap en pantallas grandes-->
+                        <!--text-right , alinear texto a la derecha-->
+                        <!--fa-iconos , agrega iconos de fontawesome-->
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-diners-club"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-discover"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Fin de Section Icons-->
+
+
+            <!--Inicio de  Footer.  Con solo img de suricata al centro. Es la misma del logo -->
+            <footer class="container-fluid fondo-rosa  py-5">
+            <!--py-5 , agrega un padding en el eje y con valor 5 en bootstrap-->
+                <img src="assets/img/logo-footer.png" alt="logo suricata" class="mx-auto d-block logo-footer"/>
+                <!--mx-auto y d-block , centra un elemento horizontalmente en bootstrap-->
+                <!--logo-footer , se utiliza para dar estilo al logo de un footer-->
+            </footer>
+            <!--Fin de Footer-->
+
+            <!-- Script  de bundle, popper y Bootstrap JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        
+        
+        </body>
+
+    </html>
